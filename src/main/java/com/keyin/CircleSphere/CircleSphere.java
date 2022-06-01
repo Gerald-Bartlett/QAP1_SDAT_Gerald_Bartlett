@@ -4,12 +4,12 @@ public class CircleSphere {
 
     public double area(double Num) {
 
-        return 3.14 * 4 * Num * Num;
+        return 3.14 * 4 * Num * Num; // 4PI * radius^2
 
     }
 
     public double circumference(double Num) {
-        return 2 * 3.14 * Num * Num;
+        return  6.2832 * Num; // 2PI* radius
     }
 
 

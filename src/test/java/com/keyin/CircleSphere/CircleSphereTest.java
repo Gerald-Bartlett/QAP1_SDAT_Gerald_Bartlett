@@ -18,9 +18,9 @@ public class CircleSphereTest {
     @Test
     @DisplayName("Test Circle Circumference successful ")
     public void testCircumference(){
-        Assertions.assertEquals(100.48, circleSphereUnderTest.circumference(4));
-        Assertions.assertEquals( 628, circleSphereUnderTest.circumference(10));
-        Assertions.assertEquals(307.72, circleSphereUnderTest.circumference(7));
+        Assertions.assertEquals(25.1328, circleSphereUnderTest.circumference(4));
+        Assertions.assertEquals( 62.832, circleSphereUnderTest.circumference(10));
+        Assertions.assertEquals(43.9824, circleSphereUnderTest.circumference(7));
     }
 
     @Test
