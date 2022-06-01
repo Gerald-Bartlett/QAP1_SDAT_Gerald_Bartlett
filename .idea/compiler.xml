@@ -6,7 +6,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="QAP1_Gerald_Bartlett" />
         <module name="QAP1_Gerald_bartlett" />
+        <module name="SDAT_QAP1_Gerald_Bartlett" />
+        <module name="QAP1_SDAT_Gerald_Bartlett" />
       </profile>
     </annotationProcessing>
   </component>

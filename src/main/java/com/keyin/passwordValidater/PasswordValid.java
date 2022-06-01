@@ -1,4 +1,4 @@
-package com.keyin.passwordtest;
+package com.keyin.passwordValidater;
 
 public class PasswordValid {
 
@@ -12,11 +12,12 @@ public class PasswordValid {
     }
 
     public boolean isCap(String Password){
-        if(Password.contains("G") || Password.isBlank());
+        if(Password.contains("GERALD"));
         return true;
     }
 
     public boolean isBlank(String Password) {
+        if(Password.contains(" "));
         return true;
     }
 }
