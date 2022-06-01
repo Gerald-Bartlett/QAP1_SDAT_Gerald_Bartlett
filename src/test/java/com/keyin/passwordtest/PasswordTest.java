@@ -14,8 +14,7 @@ public class PasswordTest {
 
         Assertions.assertEquals(true, passwordValid.isValid("Gerald"));
         Assertions.assertEquals(false, passwordValid.isValid("Bob1"));
-        Assertions.assertEquals(true, passwordValid.isCap("BOB"));
-        Assertions.assertEquals(true, passwordValid.isBlank(" "));
+
 
     }
 
@@ -24,7 +23,7 @@ public class PasswordTest {
     public void TestPasswordCap() {
         PasswordValid passwordValid = new PasswordValid();
         Assertions.assertEquals(true, passwordValid.isCap("GERALD"));
-        Assertions.assertNotEquals(false, passwordValid.isCap("GERALD"));
+        Assertions.assertNotEquals(false, passwordValid.isCap("gerald"));
     }
 
     @Test
