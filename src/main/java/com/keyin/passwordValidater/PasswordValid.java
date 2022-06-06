@@ -8,16 +8,23 @@ public class PasswordValid {
             return true;
 
         } else
-        return false;
+            return false;
     }
 
-    public boolean isCap(String Password){
-        if(Password.contains("GERALD"));
-        return true;
+    public boolean isCap(String Password) {
+        boolean returnValue = false;
+        if (Password.contains("GERALD")) {
+            returnValue = true;
+        }
+        return returnValue;
     }
 
     public boolean isBlank(String Password) {
-        if(Password.contains(" "));
-        return true;
+            boolean returnValue = false;
+
+        if(Password.contains(" ")){
+        returnValue = true;
     }
+        return returnValue;
+}
 }

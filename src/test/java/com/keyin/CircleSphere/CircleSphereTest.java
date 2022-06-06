@@ -5,7 +5,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 public class CircleSphereTest {
-    private final CircleSphere circleSphereUnderTest = new CircleSphere();
+    private CircleSphere circleSphereUnderTest = new CircleSphere();
 
     @Test
     @DisplayName("Test Circle Area successful ")

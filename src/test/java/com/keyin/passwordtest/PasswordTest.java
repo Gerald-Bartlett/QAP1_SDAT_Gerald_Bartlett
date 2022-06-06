@@ -9,18 +9,18 @@ public class PasswordTest {
 
     @Test
     @DisplayName("Test Password Length successful ")
-    public void TestPasswordLength(){
+    public void testPasswordLength(){
         PasswordValid passwordValid = new PasswordValid();
 
         Assertions.assertEquals(true, passwordValid.isValid("Gerald"));
-        Assertions.assertEquals(false, passwordValid.isValid("Bob1"));
+        Assertions.assertFalse(passwordValid.isValid("Bob1"));
 
 
     }
 
     @Test
     @DisplayName("Test Password Is UpperCase successful ")
-    public void TestPasswordCap() {
+    public void testPasswordCap() {
         PasswordValid passwordValid = new PasswordValid();
         Assertions.assertEquals(true, passwordValid.isCap("GERALD"));
         Assertions.assertNotEquals(false, passwordValid.isCap("gerald"));
@@ -28,7 +28,7 @@ public class PasswordTest {
 
     @Test
     @DisplayName("Test Password Is Blank successful ")
-    public void TestPasswordIsBlank() {
+    public void testPasswordIsBlank() {
         PasswordValid passwordValid = new PasswordValid();
         Assertions.assertEquals(true, passwordValid.isBlank(" "));
         Assertions.assertNotEquals(false, passwordValid.isBlank("Hello"));
