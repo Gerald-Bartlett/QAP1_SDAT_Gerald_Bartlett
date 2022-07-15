@@ -22,8 +22,9 @@ public class PasswordTest {
     @DisplayName("Test Password Is UpperCase successful ")
     public void testPasswordCap() {
         PasswordValid passwordValid = new PasswordValid();
-        Assertions.assertEquals(true, passwordValid.isCap("GERALD"));
-        Assertions.assertNotEquals(false, passwordValid.isCap("gerald"));
+        Assertions.assertTrue(passwordValid.isCap("GERALD"));
+        Assertions.assertEquals(false, passwordValid.isCap("gerald"));
+        Assertions.assertFalse(passwordValid.isValid("gerald"));
     }
 
     @Test
